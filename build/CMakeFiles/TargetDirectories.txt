@@ -1,0 +1,3 @@
+/tmp/projects/SemesterAverage/build/CMakeFiles/avg.dir
+/tmp/projects/SemesterAverage/build/CMakeFiles/edit_cache.dir
+/tmp/projects/SemesterAverage/build/CMakeFiles/rebuild_cache.dir
