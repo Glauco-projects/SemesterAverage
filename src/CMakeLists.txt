@@ -16,3 +16,17 @@ target_link_libraries(
     PRIVATE
        school
 )
+
+target_compile_features(
+    avg
+    PRIVATE
+        cxx_std_17
+)
+
+target_compile_options(
+    avg
+    PRIVATE
+         -Wall
+         -Wextra
+         -Wpedantic
+)
