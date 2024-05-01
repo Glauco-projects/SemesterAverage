@@ -1,4 +1,4 @@
-CMakeFiles/school.dir/school/student.cpp.o: \
+school/CMakeFiles/school.dir/student.cpp.o: \
  /tmp/projects/SemesterAverage/src/school/student.cpp \
  /usr/include/stdc-predef.h \
  /tmp/projects/SemesterAverage/src/school/student.h \

@@ -198,6 +198,15 @@ avg_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 avg_SOURCE_DIR:STATIC=/tmp/projects/SemesterAverage/src
 
+//Value Computed by CMake
+school_BINARY_DIR:STATIC=/tmp/projects/SemesterAverage/build/school
+
+//Value Computed by CMake
+school_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+school_SOURCE_DIR:STATIC=/tmp/projects/SemesterAverage/src/school
+
 
 ########################
 # INTERNAL cache entries
@@ -289,7 +298,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

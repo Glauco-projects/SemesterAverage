@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/projects/SemesterAverage/build/CMakeFiles /tmp/projects/SemesterAverage/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /tmp/projects/SemesterAverage/build && $(CMAKE_COMMAND) -E cmake_progress_start /tmp/projects/SemesterAverage/build/CMakeFiles /tmp/projects/SemesterAverage/build/school//CMakeFiles/progress.marks
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 school/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/projects/SemesterAverage/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 school/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,80 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 school/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 school/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /tmp/projects/SemesterAverage/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named avg
+# Convenience name for target.
+school/CMakeFiles/school.dir/rule:
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 school/CMakeFiles/school.dir/rule
+.PHONY : school/CMakeFiles/school.dir/rule
 
-# Build rule for target.
-avg: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 avg
-.PHONY : avg
-
-# fast build rule for target.
-avg/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/build
-.PHONY : avg/fast
-
-#=============================================================================
-# Target rules for targets named school
-
-# Build rule for target.
-school: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 school
+# Convenience name for target.
+school: school/CMakeFiles/school.dir/rule
 .PHONY : school
 
 # fast build rule for target.
 school/fast:
-	$(MAKE) $(MAKESILENT) -f school/CMakeFiles/school.dir/build.make school/CMakeFiles/school.dir/build
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f school/CMakeFiles/school.dir/build.make school/CMakeFiles/school.dir/build
 .PHONY : school/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+functions.o: functions.cpp.o
+.PHONY : functions.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/main.cpp.o
-.PHONY : main.cpp.o
+functions.cpp.o:
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f school/CMakeFiles/school.dir/build.make school/CMakeFiles/school.dir/functions.cpp.o
+.PHONY : functions.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+functions.i: functions.cpp.i
+.PHONY : functions.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/main.cpp.i
-.PHONY : main.cpp.i
+functions.cpp.i:
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f school/CMakeFiles/school.dir/build.make school/CMakeFiles/school.dir/functions.cpp.i
+.PHONY : functions.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+functions.s: functions.cpp.s
+.PHONY : functions.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/main.cpp.s
-.PHONY : main.cpp.s
+functions.cpp.s:
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f school/CMakeFiles/school.dir/build.make school/CMakeFiles/school.dir/functions.cpp.s
+.PHONY : functions.cpp.s
+
+student.o: student.cpp.o
+.PHONY : student.o
+
+# target to build an object file
+student.cpp.o:
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f school/CMakeFiles/school.dir/build.make school/CMakeFiles/school.dir/student.cpp.o
+.PHONY : student.cpp.o
+
+student.i: student.cpp.i
+.PHONY : student.i
+
+# target to preprocess a source file
+student.cpp.i:
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f school/CMakeFiles/school.dir/build.make school/CMakeFiles/school.dir/student.cpp.i
+.PHONY : student.cpp.i
+
+student.s: student.cpp.s
+.PHONY : student.s
+
+# target to generate assembly for a file
+student.cpp.s:
+	cd /tmp/projects/SemesterAverage/build && $(MAKE) $(MAKESILENT) -f school/CMakeFiles/school.dir/build.make school/CMakeFiles/school.dir/student.cpp.s
+.PHONY : student.cpp.s
 
 # Help Target
 help:
@@ -174,11 +186,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... avg"
 	@echo "... school"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... functions.o"
+	@echo "... functions.i"
+	@echo "... functions.s"
+	@echo "... student.o"
+	@echo "... student.i"
+	@echo "... student.s"
 .PHONY : help
 
 
@@ -190,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /tmp/projects/SemesterAverage/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

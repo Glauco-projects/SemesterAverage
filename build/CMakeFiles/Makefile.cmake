@@ -85,6 +85,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.29.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.2/CMakeSystem.cmake"
   "/tmp/projects/SemesterAverage/src/CMakeLists.txt"
+  "/tmp/projects/SemesterAverage/src/school/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -99,10 +100,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.29.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "school/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/school.dir/DependInfo.cmake"
   "CMakeFiles/avg.dir/DependInfo.cmake"
+  "school/CMakeFiles/school.dir/DependInfo.cmake"
   )

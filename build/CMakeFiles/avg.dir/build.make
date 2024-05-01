@@ -92,7 +92,7 @@ avg_EXTERNAL_OBJECTS =
 
 avg: CMakeFiles/avg.dir/main.cpp.o
 avg: CMakeFiles/avg.dir/build.make
-avg: libschool.a
+avg: school/libschool.a
 avg: CMakeFiles/avg.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/projects/SemesterAverage/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable avg"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/avg.dir/link.txt --verbose=$(VERBOSE)

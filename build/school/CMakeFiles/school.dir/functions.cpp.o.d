@@ -1,4 +1,4 @@
-CMakeFiles/school.dir/school/functions.cpp.o: \
+school/CMakeFiles/school.dir/functions.cpp.o: \
  /tmp/projects/SemesterAverage/src/school/functions.cpp \
  /usr/include/stdc-predef.h \
  /tmp/projects/SemesterAverage/src/school/functions.h \

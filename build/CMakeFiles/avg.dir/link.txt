@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/avg.dir/main.cpp.o -o avg  libschool.a
+/usr/bin/c++ CMakeFiles/avg.dir/main.cpp.o -o avg  school/libschool.a
