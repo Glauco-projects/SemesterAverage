@@ -69,24 +69,10 @@ include CMakeFiles/avg.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/avg.dir/flags.make
 
-CMakeFiles/avg.dir/functions.cpp.o: CMakeFiles/avg.dir/flags.make
-CMakeFiles/avg.dir/functions.cpp.o: /tmp/projects/SemesterAverage/src/functions.cpp
-CMakeFiles/avg.dir/functions.cpp.o: CMakeFiles/avg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/projects/SemesterAverage/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/avg.dir/functions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/avg.dir/functions.cpp.o -MF CMakeFiles/avg.dir/functions.cpp.o.d -o CMakeFiles/avg.dir/functions.cpp.o -c /tmp/projects/SemesterAverage/src/functions.cpp
-
-CMakeFiles/avg.dir/functions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/avg.dir/functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/projects/SemesterAverage/src/functions.cpp > CMakeFiles/avg.dir/functions.cpp.i
-
-CMakeFiles/avg.dir/functions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/avg.dir/functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/projects/SemesterAverage/src/functions.cpp -o CMakeFiles/avg.dir/functions.cpp.s
-
 CMakeFiles/avg.dir/main.cpp.o: CMakeFiles/avg.dir/flags.make
 CMakeFiles/avg.dir/main.cpp.o: /tmp/projects/SemesterAverage/src/main.cpp
 CMakeFiles/avg.dir/main.cpp.o: CMakeFiles/avg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/projects/SemesterAverage/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/avg.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/projects/SemesterAverage/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/avg.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/avg.dir/main.cpp.o -MF CMakeFiles/avg.dir/main.cpp.o.d -o CMakeFiles/avg.dir/main.cpp.o -c /tmp/projects/SemesterAverage/src/main.cpp
 
 CMakeFiles/avg.dir/main.cpp.i: cmake_force
@@ -97,35 +83,18 @@ CMakeFiles/avg.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/avg.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/projects/SemesterAverage/src/main.cpp -o CMakeFiles/avg.dir/main.cpp.s
 
-CMakeFiles/avg.dir/student.cpp.o: CMakeFiles/avg.dir/flags.make
-CMakeFiles/avg.dir/student.cpp.o: /tmp/projects/SemesterAverage/src/student.cpp
-CMakeFiles/avg.dir/student.cpp.o: CMakeFiles/avg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/projects/SemesterAverage/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/avg.dir/student.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/avg.dir/student.cpp.o -MF CMakeFiles/avg.dir/student.cpp.o.d -o CMakeFiles/avg.dir/student.cpp.o -c /tmp/projects/SemesterAverage/src/student.cpp
-
-CMakeFiles/avg.dir/student.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/avg.dir/student.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/projects/SemesterAverage/src/student.cpp > CMakeFiles/avg.dir/student.cpp.i
-
-CMakeFiles/avg.dir/student.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/avg.dir/student.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/projects/SemesterAverage/src/student.cpp -o CMakeFiles/avg.dir/student.cpp.s
-
 # Object files for target avg
 avg_OBJECTS = \
-"CMakeFiles/avg.dir/functions.cpp.o" \
-"CMakeFiles/avg.dir/main.cpp.o" \
-"CMakeFiles/avg.dir/student.cpp.o"
+"CMakeFiles/avg.dir/main.cpp.o"
 
 # External object files for target avg
 avg_EXTERNAL_OBJECTS =
 
-avg: CMakeFiles/avg.dir/functions.cpp.o
 avg: CMakeFiles/avg.dir/main.cpp.o
-avg: CMakeFiles/avg.dir/student.cpp.o
 avg: CMakeFiles/avg.dir/build.make
+avg: libschool.a
 avg: CMakeFiles/avg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/projects/SemesterAverage/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable avg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/projects/SemesterAverage/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable avg"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/avg.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

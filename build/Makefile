@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named school
+
+# Build rule for target.
+school: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 school
+.PHONY : school
+
+# fast build rule for target.
+school/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/school.dir/build.make CMakeFiles/school.dir/build
+.PHONY : school/fast
+
+#=============================================================================
 # Target rules for targets named avg
 
 # Build rule for target.
@@ -128,30 +141,6 @@ avg: cmake_check_build_system
 avg/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/build
 .PHONY : avg/fast
-
-functions.o: functions.cpp.o
-.PHONY : functions.o
-
-# target to build an object file
-functions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/functions.cpp.o
-.PHONY : functions.cpp.o
-
-functions.i: functions.cpp.i
-.PHONY : functions.i
-
-# target to preprocess a source file
-functions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/functions.cpp.i
-.PHONY : functions.cpp.i
-
-functions.s: functions.cpp.s
-.PHONY : functions.s
-
-# target to generate assembly for a file
-functions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/functions.cpp.s
-.PHONY : functions.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -177,29 +166,53 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-student.o: student.cpp.o
-.PHONY : student.o
+school/functions.o: school/functions.cpp.o
+.PHONY : school/functions.o
 
 # target to build an object file
-student.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/student.cpp.o
-.PHONY : student.cpp.o
+school/functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/school.dir/build.make CMakeFiles/school.dir/school/functions.cpp.o
+.PHONY : school/functions.cpp.o
 
-student.i: student.cpp.i
-.PHONY : student.i
+school/functions.i: school/functions.cpp.i
+.PHONY : school/functions.i
 
 # target to preprocess a source file
-student.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/student.cpp.i
-.PHONY : student.cpp.i
+school/functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/school.dir/build.make CMakeFiles/school.dir/school/functions.cpp.i
+.PHONY : school/functions.cpp.i
 
-student.s: student.cpp.s
-.PHONY : student.s
+school/functions.s: school/functions.cpp.s
+.PHONY : school/functions.s
 
 # target to generate assembly for a file
-student.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avg.dir/build.make CMakeFiles/avg.dir/student.cpp.s
-.PHONY : student.cpp.s
+school/functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/school.dir/build.make CMakeFiles/school.dir/school/functions.cpp.s
+.PHONY : school/functions.cpp.s
+
+school/student.o: school/student.cpp.o
+.PHONY : school/student.o
+
+# target to build an object file
+school/student.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/school.dir/build.make CMakeFiles/school.dir/school/student.cpp.o
+.PHONY : school/student.cpp.o
+
+school/student.i: school/student.cpp.i
+.PHONY : school/student.i
+
+# target to preprocess a source file
+school/student.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/school.dir/build.make CMakeFiles/school.dir/school/student.cpp.i
+.PHONY : school/student.cpp.i
+
+school/student.s: school/student.cpp.s
+.PHONY : school/student.s
+
+# target to generate assembly for a file
+school/student.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/school.dir/build.make CMakeFiles/school.dir/school/student.cpp.s
+.PHONY : school/student.cpp.s
 
 # Help Target
 help:
@@ -210,15 +223,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... avg"
-	@echo "... functions.o"
-	@echo "... functions.i"
-	@echo "... functions.s"
+	@echo "... school"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... student.o"
-	@echo "... student.i"
-	@echo "... student.s"
+	@echo "... school/functions.o"
+	@echo "... school/functions.i"
+	@echo "... school/functions.s"
+	@echo "... school/student.o"
+	@echo "... school/student.i"
+	@echo "... school/student.s"
 .PHONY : help
 
 

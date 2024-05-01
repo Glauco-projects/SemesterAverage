@@ -1,6 +1,7 @@
-CMakeFiles/avg.dir/functions.cpp.o: \
- /tmp/projects/SemesterAverage/src/functions.cpp \
- /usr/include/stdc-predef.h /tmp/projects/SemesterAverage/src/functions.h \
+CMakeFiles/school.dir/school/functions.cpp.o: \
+ /tmp/projects/SemesterAverage/src/school/functions.cpp \
+ /usr/include/stdc-predef.h \
+ /tmp/projects/SemesterAverage/src/school/functions.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -43,8 +44,8 @@ CMakeFiles/avg.dir/functions.cpp.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc \
- /tmp/projects/SemesterAverage/src/student.h /usr/include/c++/11/string \
- /usr/include/c++/11/bits/stringfwd.h \
+ /tmp/projects/SemesterAverage/src/school/student.h \
+ /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
  /usr/include/wchar.h \

@@ -1,6 +1,8 @@
-CMakeFiles/avg.dir/student.cpp.o: \
- /tmp/projects/SemesterAverage/src/student.cpp /usr/include/stdc-predef.h \
- /tmp/projects/SemesterAverage/src/student.h /usr/include/c++/11/string \
+CMakeFiles/school.dir/school/student.cpp.o: \
+ /tmp/projects/SemesterAverage/src/school/student.cpp \
+ /usr/include/stdc-predef.h \
+ /tmp/projects/SemesterAverage/src/school/student.h \
+ /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

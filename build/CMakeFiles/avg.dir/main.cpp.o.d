@@ -149,5 +149,6 @@ CMakeFiles/avg.dir/main.cpp.o: /tmp/projects/SemesterAverage/src/main.cpp \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /tmp/projects/SemesterAverage/src/student.h \
- /tmp/projects/SemesterAverage/src/functions.h
+ /tmp/projects/SemesterAverage/src/school/student.h \
+ /tmp/projects/SemesterAverage/src/school/functions.h \
+ /tmp/projects/SemesterAverage/src/school/student.h

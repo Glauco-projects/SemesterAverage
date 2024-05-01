@@ -6,11 +6,17 @@ add_library(school)
 target_sources(
     school
     PUBLIC
-        functions.h
-        student.h
+        school/functions.h
+        school/student.h
     PRIVATE
-        functions.cpp
-        student.cpp
+        school/functions.cpp
+        school/student.cpp
+)
+
+target_include_directories(
+    school
+    PUBLIC
+        school/   
 )
 
 add_executable(avg)
